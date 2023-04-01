@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="UNIVERSIDAD JAVA"
+        android:textSize="28dp" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbemprendimiento"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:onClick="Calcular"
+                android:text="Emprendimiento"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/rbinteligenegocio"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:checked="true"
+                android:onClick="Calcular"
+                android:text="Inteligencia de negocios"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/rbauditoriasistem"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:onClick="Calcular"
+                android:text="Auditoria de sistemas"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/rbseguridadinfo"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:onClick="Calcular"
+                android:text="Seguridad informatica"
+                android:textSize="25dp" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvmateria"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="500000"
+        android:textSize="28dp" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbingles"
+            android:layout_width="2dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:onClick="Calcular"
+            android:text="Ingles"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvingles"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etnumerocredit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Digite numero de creditos"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etcredito"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint=" Digite valor credito"
+        android:ems="10"
+        android:inputType="number" />
+
+
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Total" />
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:text="Calcular"
+            android:onClick="Calcular"/>
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:onClick="Limpiar"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:text="Limpiar" />
+
+    </LinearLayout>
+
+</LinearLayout>
